@@ -134,7 +134,7 @@ class Transaction:
 
 class BudgetTracker:
     """
-    Handles transactions and creates reports based on categories or monthly data.
+    Handles transactions and creates reports based on data.
 
     :param transactions: Optional iterable of transactions to preload.
     :ivar transactions: An ordered list of recorded transactions.
@@ -234,7 +234,7 @@ class BudgetTracker:
 
         :param year: Four-digit year.
         :param month: Month number from 1 to 12.
-        :return: Dictionary containing month, totals, category totals, and records.
+        :return: Dictionary containing month, totals, and records.
         """
         key = month_key(year, month)
         transactions = self._filtered_transactions(year, month)
