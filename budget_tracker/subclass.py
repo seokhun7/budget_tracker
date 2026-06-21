@@ -10,7 +10,13 @@ class Income(Transaction):
 
     :param amount: The income amount, which should be positive.
     :param category: The category of the income.
-    :param transaction_date: The date in the format "YYYY-MM-DD" or as datetime.date.
+    """Initialize a validated income transaction.
+
+    :param amount: Positive income amount.
+    :param category: Income category.
+    :param transaction_date: Date as "YYYY-MM-DD"
+        or as a datetime.date.
+    """
     :param description: An optional memo for the income.
     """
 
@@ -95,7 +101,13 @@ class Expense(Transaction):
 
     :param amount: The expense amount, which should be positive.
     :param category: The category of the expense.
-    :param transaction_date: The date in the format "YYYY-MM-DD" or as datetime.date.
+    """Initialize a validated expense transaction.
+
+    :param amount: Positive expense amount.
+    :param category: Expense category.
+    :param transaction_date: Date as "YYYY-MM-DD"
+        or as a datetime.date.
+    """
     :param description: An optional memo for the expense.
     """
 
